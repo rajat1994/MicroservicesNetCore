@@ -1,0 +1,20 @@
+--docker commands
+
+docker images -> To show all the images
+docker ps  -> To show containers
+docker pull mongo
+docker run -d -p 27017:27017 --name aspnetrun-mongo mongo
+
+--to switch to mongo
+
+docker exec -it aspnetrun-mongo /bin/bash
+mongo
+
+
+
+
+-- Application specifics
+
+Create CatalogController class
+Create Product class
+Install Mongodb.bson and Mongodb.driver nuget pakages
